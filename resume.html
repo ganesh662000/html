@@ -1,181 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ganesh Shirole - Resume</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ganesh Shirole — Major Incident Manager</title>
   <style>
-    @page {
-      size: A4;
-      margin: 1in;
+    :root{
+      --text:#0f172a; /* slate-900 */
+      --muted:#475569;/* slate-600 */
+      --accent:#2563eb;/* indigo-600 */
+      --border:#dae6f1;/* slate-200 */
+      --bg:#ffffff;/* white */
+      --chip:#f8fafc;/* slate-50 */
     }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text)}
+    body{font:15px/1.5 "Inter",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    ul{margin:.35rem 0 .75rem;padding-left:1.15rem}
+    li{margin:.18rem 0}
 
-    html, body {
-      font-family: Calibri, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f7f7f7;
-      line-height: 1.5;
-      width: 100%;
-      height: 100%;
-    }
+    .container{max-width:920px;margin:32px auto;padding:0 20px}
 
-    .container {
-      max-width: 794px;
-      margin: auto;
-      background: #fff;
-      padding: 30px;
-      box-sizing: border-box;
-    }
+    header{display:grid;grid-template-columns:1fr;gap:8px;border-bottom:2px solid var(--border);padding-bottom:16px}
+    .name{font-size:30px;font-weight:800}
+    .title{color:var(--muted);font-weight:600}
+    .contact{color:b;font-size:13px;margin-top:6px}
+    .contact a{color:inherit}
 
-    .box {
-      padding: 10px 15px;
-      margin-bottom: 20px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-      page-break-inside: avoid;
-    }
+    section{padding:16px 0}
+    .section-title{font-size:13px;letter-spacing:1.1px;font-weight:800;color:blue;text-transform:uppercase;margin-bottom:8px}
+    .card{border:2px solid var(--border);border-radius:12px;padding:16px}
 
-    .header {
-      text-align: center;
-      font-size: 22px;
-      font-weight: bold;
-    }
+    .summary{font-size:14px}
 
-    .sub-header {
-      text-align: center;
-      font-size: 16px;
-      color: #333;
-    }
+    .grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .skill-group{background:var(--chip);border:2px solid var(--border);border-radius:10px;padding:10px 12px}
+    .skill-group h4{margin:0 0 6px;font-size:12px;letter-spacing:.4px;text-transform:uppercase;color:black}
+    .chips{display:flex;flex-wrap:wrap;gap:6px}
+    .chip{padding:3px 8px;border-radius:999px;border:1px solid var(--border);background:#fff;font-size:12px}
 
-    h2 {
-      font-size: 18px;
-      color: #1e90ff;
-      margin-bottom: 10px;
-    }
+    .row{display:grid;grid-template-columns:1fr auto;gap:6px 16px}
+    .org{font-weight:700}
+    .meta{color:var(--muted);font-size:13px}
 
-    p, li {
-      font-size: 13px;
-      color: #000;
+    @page{size:A4;margin:14mm}
+    @media print{
+      body{font-size:12px}
+      .container{max-width:100%;margin:0;padding:0}
+      .card{border:0;padding:0}
+      .skill-group{background:none}
+      a{text-decoration:none;color:inherit}
+      .print-hide{display:none!important}
     }
-
-    ul {
-      padding-left: 20px;
-      margin: 0;
+    .chip{
+      color: dark grey;
     }
-
-    .contact-info {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      font-size: 14px;
-      gap: 10px;
+    @media (max-width:680px){
+      .grid-3,.grid-2{grid-template-columns:1fr}
     }
-
-    .contact-info div {
-      padding: 5px;
-    }
-
-    a {
-      color: #1e90ff;
-      text-decoration: none;
-    }
+   
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="box">
-      <div class="header">Ganesh Shirole</div>
-      <div class="sub-header">Software Developer (SDET)</div>
-    </div>
+    <header>
+      <div class="name">Ganesh Shirole</div>
+      <div class="title" style="color: blue;">Major Incident Manager • IT Service Management</div>
+      <div class="contact">
+       Pune, India · <a href="tel:+919049646617" style="color: black;">+91 9049646617</a> · <a href="mailto:gshirole71@gmail.com" style="color: blue;">gshirole71@gmail.com</a>
+      </div>
+    </header>
 
-    <div class="box contact-info">
-      <div><img src="https://img.icons8.com/ios-filled/20/000000/phone.png" style="height:16px; vertical-align:middle; margin-right:6px;">+91 9049646617</div>
-      <div><img src="https://img.icons8.com/ios-filled/20/000000/new-post.png" style="height:16px; vertical-align:middle; margin-right:6px;"><a href="mailto:ganeshshirole2@gmail.com">ganeshshirole2@gmail.com</a></div>
-      <div><img src="https://img.icons8.com/ios-filled/20/000000/birthday.png" style="height:16px; vertical-align:middle; margin-right:6px;">DOB: June 06, 2000</div>
-      <div><img src="https://img.icons8.com/ios-filled/20/000000/marker.png" style="height:16px; vertical-align:middle; margin-right:6px;">Pune, Maharashtra, India</div>
-      <div><img src="https://img.icons8.com/ios-filled/20/000000/linkedin.png" style="height:16px; vertical-align:middle; margin-right:6px;"><a href="https://linkedin.com/in/ganesh-shirole-a5775628a">LinkedIn</a></div>
-      <div><img src="https://img.icons8.com/ios-filled/20/000000/github.png" style="height:16px; vertical-align:middle; margin-right:6px;"><a href="https://github.com/ganesh662000">GitHub</a></div>
-    </div>
+    <!-- SUMMARY -->
+    <section>
+      <div class="section-title">Professional Summary</div>
+      <div class="card summary">
+        Experienced Major Incident Manager (3.7+ years) with a strong track record coordinating cross-functional teams to resolve high-priority incidents swiftly while maintaining calm, clear stakeholder communications. Skilled in ITIL-aligned processes, escalation frameworks, and post-incident reviews that drive measurable improvements in availability and business continuity.
+      </div>
+    </section>
 
-    <div class="box">
-      <h2>Summary</h2>
-      <p>Experienced SDET with over 3 years of hands-on experience in software development, test automation, and quality assurance. Proficient in designing robust test automation frameworks, executing test plans, and integrating tests into CI/CD pipelines. Expertise in ensuring seamless application performance, reliability, and scalability through comprehensive testing practices. Strong communicator and team player with a deep understanding of Agile methodologies.</p>
-    </div>
+    <!-- CORE COMPETENCIES -->
+    <section>
+      <div class="section-title">Core Competencies</div>
+      <div class="grid-3" style="color: #0f172a;">
+        <div class="skill-group">
+          <h4 class="1">Incident Leadership</h4>
+          <div class="chips" style="color: #0f172a;">
+            <span class="chip">Major Incident Mgmt</span>
+            <span class="chip">Bridge Facilitation</span>
+            <span class="chip">Crisis Comms</span>
+            <span class="chip">Vendor Coordination</span>
+            <span class="chip">Executive Updates</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Service Excellence</h4>
+          <div class="chips">
+            <span class="chip">SLA/OLA Governance</span>
+            <span class="chip">Escalation Mgmt</span>
+            <span class="chip">KPI Reporting</span>
+            <span class="chip">24×7 Ops</span>
+            <span class="chip">Business Continuity</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Problem & Change</h4>
+          <div class="chips">
+            <span class="chip">RCA & PIR</span>
+            <span class="chip">ITIL Framework</span>
+            <span class="chip">Change Readiness</span>
+            <span class="chip">Process Optimization</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="box">
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Programming Languages:</strong> JavaScript, Java</li>
-        <li><strong>Test Automation:</strong> Selenium, Cypress, JUnit, TestNG</li>
-        <li><strong>CI/CD:</strong> Jenkins, Git, Docker, GitLab CI</li>
-        <li><strong>API Testing:</strong> Postman, REST Assured</li>
-        <li><strong>Backend Testing:</strong> Spring Boot, Hibernate, JUnit</li>
-        <li><strong>Databases:</strong> MySQL, MongoDB, SQL Server</li>
-        <li><strong>Development Tools:</strong> Node.js, Git, Maven, Gradle</li>
-        <li><strong>Testing Tools:</strong> QTest, JIRA, Rally, Robot Framework</li>
-      </ul>
-    </div>
+    <!-- EXPERIENCE -->
+    <section>
+      <div class="section-title">Professional Experience</div>
+      <div class="card">
+        <div class="row">
+          <div>
+            <div class="org">Tata Consultancy Services (TCS) — Major Incident Manager</div>
+            <div class="meta">Pune, India</div>
+          </div>
+          <div class="meta">Jan 20, 2022 – Present</div>
+        </div>
+        <ul>
+          <li>Lead and manage high-impact incidents end-to-end, coordinating infra, dev, ops, and business teams to restore services rapidly with structured communications.</li>
+          <li>Operate escalation protocols and on-call rotations, ensuring timely engagement of SMEs and leadership to protect SLAs and minimize downtime.</li>
+          <li>Run incident bridges, send executive updates, and maintain precise incident records; publish metrics and insights for continual improvement.</li>
+          <li>Drive ITIL best practices across Incident, Problem, and Change; chair PIRs to identify root causes and implement durable fixes.</li>
+          <li>Develop and maintain incident playbooks for recurring scenarios, reducing time-to-resolution.</li>
+          <li>Manage global 24×7 support model with effective shift handovers and knowledge capture.</li>
+          <li><strong>Impact:</strong> Reduced incident resolution time by up to 85% via optimized escalation paths and collaboration; improved workflows contributing to a significant reduction in incident occurrence.</li>
+        </ul>
+      </div>
+    </section>
 
-    <div class="box">
-      <h2>Professional Experience</h2>
-      <p><strong>SDET (Test Analyst) – Tata Consultancy Services</strong><br>Jan 2022 – July 2025</p>
-      <ul>
-        <li>Designed and developed UI automation frameworks for Appium Android and iOS testing integrated with Jenkins.</li>
-        <li>Created and maintained Cypress automation framework and Jenkins pipeline for continuous testing.</li>
-        <li>Developed utility for test data encryption/decryption using private key encryption methods.</li>
-        <li>Designed and implemented backend testing using JUnit to ensure robust API testing and validate service endpoints.</li>
-        <li>Optimized test performance by identifying bottlenecks and improving automation scripts.</li>
-        <li>Collaborated with developers and product managers to define testing scope and requirements.</li>
-        <li>Participated in Agile sprint ceremonies and contributed to defect tracking and resolution using JIRA.</li>
-      </ul>
-    </div>
+    <!-- PROJECTS & ACHIEVEMENTS -->
+    <section>
+      <div class="section-title">Projects & Achievements</div>
+      <div class="card">
+        <ul>
+          <li><strong>Major Incident Reduction:</strong> Optimized incident workflows, cutting average resolution time substantially and elevating customer satisfaction.</li>
+          <li><strong>Incident Response Framework:</strong> Designed a streamlined response framework that accelerated handling of Sev‑1 incidents.</li>
+          <li><strong>Crisis Communication Protocols:</strong> Standardized stakeholder communications to reduce ambiguity and improve response clarity during outages.</li>
+        </ul>
+      </div>
+    </section>
 
-    <div class="box">
-      <h2>Projects</h2>
-      <p><strong>Issuer Modernization Project [Client: TSYS GlobalPayments]</strong><br>
-      <em>Role: Developer and Tester</em><br>
-      Application to automate credit card and loan application processes through automated background checks and strategies.<br>
-      <strong>Tech:</strong> Node.js, Cypress, Jenkins, AWS, Spring Boot, JUnit</p>
+    <!-- TOOLS -->
+    <section>
+      <div class="section-title">Technical Tools & Platforms</div>
+      <div class="grid-3">
+        <div class="skill-group">
+          <h4>ITSM & IM</h4>
+          <div class="chips">
+            <span class="chip">ServiceNow</span>
+            <span class="chip">BMC Remedy</span>
+            <span class="chip">JIRA</span>
+            <span class="chip">PagerDuty</span>
+            <span class="chip">Cherwell</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Monitoring & Reporting</h4>
+          <div class="chips">
+            <span class="chip">Splunk</span>
+            <span class="chip">Nagios</span>
+            <span class="chip">AppDynamics</span>
+            <span class="chip">SolarWinds</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Collaboration & OS</h4>
+          <div class="chips">
+            <span class="chip">MS Teams</span>
+            <span class="chip">Slack</span>
+            <span class="chip">Zoom</span>
+            <span class="chip">Outlook</span>
+            <span class="chip">Windows</span>
+            <span class="chip">macOS</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <p><strong>Merchant Portal Reporting [Client: TSYS GlobalPayments]</strong><br>
-      <em>Role: SDET</em><br>
-      Testing of a portal for merchant reporting of transactions, revenue, and insights.<br>
-      <strong>Tech:</strong> Node.js, React, Spring Boot, Selenium, JUnit</p>
-    </div>
+    <!-- EDUCATION & CERTS -->
+    <section>
+      <div class="section-title">Education & Certifications</div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="org">Master of Computer Science</div>
+          <div class="meta">Savitribai Phule Pune University · Jun 2021 – Aug 2023</div>
+        </div>
+        <div class="card">
+          <div class="org">ITIL v4 Foundation</div>
+          <div class="meta">Certificate in IT Service Management</div>
+        </div>
+      </div>
+    </section>
 
-    <div class="box">
-      <h2>Education</h2>
-      <ul>
-        <li>M.Sc. in Computer Science (2021–2023)</li>
-        <li>B.Sc. in Computer Science (2018–2021)</li>
-      </ul>
-    </div>
+    <!-- DECLARATION -->
+    <section>
+      <div class="section-title">Declaration</div>
+      <div class="card">
+        I hereby declare that the information provided is accurate to the best of my knowledge.
+        <div class="meta" style="margin-top:6px">Place: Pune</div>
+      </div>
+    </section>
 
-    <div class="box">
-      <h2>Certifications</h2>
-      <ul>
-        <li>AWS Certified Cloud Practitioner – Amazon Web Services</li>
-        <li>Microsoft Azure Fundamentals (AZ-900)</li>
-      </ul>
-    </div>
-
-    <div class="box">
-      <h2>Languages</h2>
-      <ul>
-        <li>English</li>
-        <li>Hindi</li>
-        <li>Marathi</li>
-      </ul>
-    </div>
-
-    <div class="box">
-      <h2>Interests</h2>
-      <ul>
-        <li>Reading Tech Articles</li>
-        <li>Building New Tech Tools</li>
-        <li>Exploring New Technologies</li>
-        <li>Learning GCP Cloud</li>
-      </ul>
-    </div>
+    <section class="print-hide" style="padding-top:6px">
+      <button onclick="window.print()" style="padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:#fff;cursor:pointer;font-weight:600">Print / Save as PDF</button>
+    </section>
   </div>
 </body>
 </html>
